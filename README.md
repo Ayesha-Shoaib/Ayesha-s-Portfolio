@@ -126,9 +126,9 @@ plt.show()
 sharpe_ratio = (mean_portfolio - combined_data['deannualized_yield'].mean()) / std_dev_portfolio
 
 ```
-# Unit Root Testing and ARIMA Modeling
+Unit Root Testing and ARIMA Modeling
 result_price = sm.tsa.adfuller(combined_data['Close_y'])
-# Check the result and choose the appropriate model for price
+Check the result and choose the appropriate model for price
 
 
 result_return = sm.tsa.adfuller(combined_data['portfolio_return'].dropna())
